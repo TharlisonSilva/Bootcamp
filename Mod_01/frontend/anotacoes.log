@@ -1,0 +1,14 @@
+
+# Genericos
+
+ Babel   : Converter (transpilar) código react para um codigo que o browser entenda.
+ Webpack : Para cada tipo de arquivo (.js, .png, .css) vai converter o codigo para uma maneira diferente.
+ Loaders : babel-loader, css-loader, image-loader
+ JSX: HTML dentro do javascript (javascript XML).
+
+
+
+# React
+    Componente - tudo é componente no react, até mesmo a pagina toda.
+    Propriedade - informações passadas como parametros para os componentes, parecido com metodos.
+    Estado e imutabilidade - garante perfomance mesmo em muitos registros
