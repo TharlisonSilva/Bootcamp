@@ -11,23 +11,36 @@ import './App.css';
 import Header from './components/Header';
 
 function App(){
-    const projetos = ['Desenvolvimento de app', 'Front-react app'];
+    const [projects, setProjects] = useState([]);
+    
     useEffect(() => {
         api.get('projects').then(response => {
-            console.log(response);
+            setProjects(response.data);
         });
     }, []);
 
+    async function handleAddProject(){
+        //setProjects([...projects,`Novo Projeto ${Date.now()}`]);
+        
+        const response = await api.post('projects',{
+            title: `Novo Projeto ${Date.now()}`,
+            owner: 'Tharlison'
+        });
+
+        const project = response.data;
+
+        setProjects([...projects, project]);
+    };
+
     return (
         <>
-        <Header title="HomePage">          
-            <ul>
-                <li>HomePages</li>
-                <li>Projects</li>
-            </ul>
-        </Header>
+        <Header title="HomePage" />          
+        <ul>
+            {projects.map(project => <li key={project.id}>{project.title}</li>)}
+        </ul>
+        <button type="button" onClick={handleAddProject}>Adicionar</button>
         </>
     );
-};
+}
 
 export default App;
