@@ -1,8 +1,8 @@
 import express from 'express';
-import {helloWorld} from './routes';
+import {CriarUser} from './routes';
 
 const app = express();
 
-app.get('/', helloWorld);
+app.get('/', CriarUser);
 
 app.listen(3333);
