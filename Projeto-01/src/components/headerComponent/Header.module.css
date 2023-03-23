@@ -10,3 +10,8 @@
 .header img {
     height: 2rem;
 }
+
+.header strong{
+    margin-top: 0.5rem;
+    margin-left: 5px;
+}

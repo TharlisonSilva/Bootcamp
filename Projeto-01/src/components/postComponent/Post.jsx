@@ -13,8 +13,17 @@ export function Post(props){
                     </div>
                 </div>
 
-                <time dateTime="2023-03-23 19:35">Publicado a 1hora</time>
+                <time title='23 Março de 2023 às 19:35' dateTime="2023-03-23 19:35">Publicado a 1hora</time>
             </header>
+
+            <div className={styles.content}>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>  
+                <p>Excepturi reiciendis consequatur voluptates sequi molestiae itaque vel qui distinctio eos? Molestiae.</p>
+                <p>👉 {' '} <a href="#">https://github.com/TharlisonSilva/Bootcamp</a></p> 
+                <p><a href="">#newProject</a> {' '}
+                   <a href="">#StudyReact</a>
+                </p> 
+            </div>
         </article>
     )
 }
