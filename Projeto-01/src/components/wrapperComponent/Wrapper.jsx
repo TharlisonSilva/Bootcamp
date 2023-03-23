@@ -1,5 +1,6 @@
 import { Post } from '../postComponent/Post';
 import { Sidebar } from '../sidebarComponent/Sidebar';
+
 import styles from './Wrapper.module.css';
 
 export function Wrapper(){
