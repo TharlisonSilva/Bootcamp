@@ -1,5 +1,5 @@
-import { Post } from '../postComponent/Post';
-import { Sidebar } from '../sidebarComponent/Sidebar';
+import { Post } from '../post/Post';
+import { Sidebar } from '../sidebar/Sidebar';
 
 import styles from './Wrapper.module.css';
 

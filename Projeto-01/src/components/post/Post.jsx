@@ -1,3 +1,4 @@
+import { Comment } from '../comment/Comment';
 import styles from './Post.module.css';
 
 export function Post(props){
@@ -24,6 +25,25 @@ export function Post(props){
                    <a href="">#StudyReact</a>
                 </p> 
             </div>
+
+            <form action="" className={styles.commentForm}>
+                <strong>Deixe seu feedback</strong>
+
+                <textarea 
+                    placeholder='Deixe seu comentário'
+                />
+
+                <footer>
+                    <button type='submit'>Publicar</button>
+                </footer>
+            </form>
+
+            <div className={styles.commentList}>
+                <Comment />
+                <Comment />
+                <Comment />
+            </div>
+
         </article>
     )
 }

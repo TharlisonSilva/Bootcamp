@@ -1,5 +1,5 @@
-import { Header } from './components/headerComponent/Header';
-import { Wrapper } from './components/wrapperComponent/Wrapper';
+import { Header } from './components/header/Header';
+import { Wrapper } from './components/wrapper/Wrapper';
 
 export function App() {
 
