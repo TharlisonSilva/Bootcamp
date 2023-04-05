@@ -1,9 +1,9 @@
-import { Post } from '../post/Post';
+import { Post, PostType } from '../post/Post';
 import { Sidebar } from '../sidebar/Sidebar';
 
 import styles from './Wrapper.module.css';
 
-const posts = [
+const posts: PostType[] = [
   {
     id: 1,
     author:{
@@ -47,9 +47,7 @@ export function Wrapper(){
               return (
                 <Post
                   key={post.id}
-                  author={post.author}
-                  content={post.content}
-                  publishedAt={post.publishedAt} 
+                  post={post}
                 />
               )
             })}
