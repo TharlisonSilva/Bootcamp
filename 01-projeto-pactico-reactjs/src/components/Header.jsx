@@ -17,7 +17,7 @@ export function Header(){
 
             <div className={styles.InputTask}>
                 <input type="text" />
-                <button>Criar <PlusCircle size={12}/> </button>
+                <button>Criar <PlusCircle size={18}/> </button>
             </div>
             
         </header>
